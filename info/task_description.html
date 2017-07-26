@@ -1,23 +1,45 @@
 <p>
-    You have a set of ints. You should create a list of intervals out of it and size of the result list should be minimal.
+  From a set of ints you have to create a list of closed intervals as tuples, so the
+  intervals are covering all the values found in the set.
 </p>
 
 <p>
-    <strong>Input: </strong> A set of ints.
+  A closed interval includes its endpoints! The interval <em>(1,5)</em>, for example,
+  includes each value <em>x</em> that satifies the condition
+  <em>1&nbsp;<&nbsp;x&nbsp;<&nbsp;5</em>.
 </p>
 
 <p>
-    <strong>Output: </strong> A list of tuples. Each tuple has two elements, both are int. The elements show beginning and ending of interval.
+  Values can only be in the same interval if the difference between a value and the next
+  smaller value in the set equals one, otherwise a new interval begins. Of course, the
+  start value of an interval is excluded from this rule.<br>
+  A single value, that does not fit into an existing interval becomes the start- and
+  endpoint of a new interval.
 </p>
 
+<p>
+  <strong>Input:</strong> A set of ints.
+</p>
 
+<p>
+  <strong>Output:</strong> A list of tuples of two ints, indicating the endpoints of the interval.
+</p>
 
 <div class="for_info_only">
-    <p>
-        <strong>Example:</strong>
-    </p>
-<pre class="brush: python">
+  <p>
+    <strong>Examples:</strong>
+  </p>
+  <pre class="brush: python">
 create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)]
-create_intervals({1, 2, 3, 4, 5, 6, 7, 8}) == [(1, 8)]
-</pre>
+create_intervals({1, 2, 3, 4, 5, 6, 7, 8}) == [(1, 8)]</pre>
 </div>
+
+<p>
+  <strong>Preconditions:</strong><br>
+  <!-- if structure needed in case preconditions must be added -->
+  {% if interpreter.slug == "js-node" %}
+  None
+  {% else %}
+  None
+  {% endif %}
+</p>
