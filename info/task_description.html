@@ -1,5 +1,5 @@
 <p>
-  From a {% if interpreter.slug == "js-node" %}Array of Integers{% else %}set of ints{% endif %} you have to create a list of closed intervals as tuples, so the
+  From a {% if interpreter.slug == "js-node" %}Array of Integers{% else %}set of ints{% endif %} you have to create a list of closed intervals as {% if interpreter.slug == "js-node" %}Arrays{% else %}tuples{% endif %}, so the
   intervals are covering all the values found in the set.
 </p>
 

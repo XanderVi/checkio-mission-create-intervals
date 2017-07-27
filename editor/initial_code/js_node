@@ -1,9 +1,9 @@
 "use strict";
 
 function createIntervals(data) {
-	// generate Array of Intervals out of Array of Integers.
+    // generate Array of Intervals out of Array of Integers.
 
-	// your code here
+    // your code here
     return [];
 }
 
