@@ -35,7 +35,9 @@ from tests import TESTS
 
 cover_code = '''
 def cover(func, in_data):
-    return func(set(in_data))
+    res = func(set(in_data))
+    assert all([isinstance(item, tuple) for item in res]), "list of tuples should be returned"
+    return res
 '''
 
 api.add_listener(
