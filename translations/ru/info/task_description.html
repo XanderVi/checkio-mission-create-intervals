@@ -1,5 +1,5 @@
 <p>
-  Из {% if interpreter.slug == "js-node" %}массива(Array) целых чисел(Integer){% else %}множества(set) целых чисел(int){% endif %} вам нужно создать список(list) замкнутых интервалов в виде {% if interpreter.slug == "js-node" %}массивов(Arrays){% else %}кортежей(tuple){% endif %} таких,
+  Из {% if interpreter.slug == "js-node" %}массива(Array) целых чисел(Integer){% else %}множества(set) целых чисел(int){% endif %} вам нужно создать итератор списка(list) замкнутых интервалов в виде {% if interpreter.slug == "js-node" %}массивов(Arrays){% else %}кортежей(tuple){% endif %} таких,
   чтобы интервалы охватывали все значения, найденные в множестве.
 </p>
 
@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  <strong>Исходящие:</strong> {% if interpreter.slug == "js-node" %}масссив массивов двух целых чисел(Array of Array of two Integers){% else %}список кортежей двух целых чисел(A list of tuples of two ints){% endif %}, обозначающими концы промежутка. Массив должен быть отсортирован по начальной точке каждого интервала.
+  <strong>Исходящие:</strong> {% if interpreter.slug == "js-node" %}масссив массивов двух целых чисел(Array of Array of two Integers){% else %}итератор списка кортежей двух целых чисел(A list of tuples of two ints){% endif %}, обозначающими концы промежутка. Массив должен быть отсортирован по начальной точке каждого интервала.
 </p>
 
 <div class="for_info_only">

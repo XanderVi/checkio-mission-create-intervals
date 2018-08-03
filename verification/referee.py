@@ -36,8 +36,9 @@ from tests import TESTS
 cover_code = '''
 def cover(func, in_data):
     res = func(set(in_data))
-    assert all([isinstance(item, tuple) for item in res]), "list of tuples should be returned"
-    return res
+    assert hasattr(res, '__iter__'), "your function should return the iterator object"
+    assert hasattr(res, '__next__'), "your function should return the iterator object"
+    return list(res)
 '''
 
 api.add_listener(
