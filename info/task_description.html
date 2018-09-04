@@ -1,5 +1,5 @@
 <p>
-  From a set of ints you have to create a list of closed intervals as tuples, so the intervals are covering all the values found in the set. After that you have to create an iterator object which is linked to this list.
+  From a set of ints (which will be an iterator of the sorted list) you have to create a list of closed intervals as tuples, so the intervals are covering all the values found in the set. After that you have to create an iterator object which is linked to this list.
 </p>
 
 <p>
@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  <strong>Input:</strong> A set of ints.
+  <strong>Input:</strong> An iterator of the sorted list of ints.
 </p>
 
 <p>
@@ -29,7 +29,7 @@
     <strong>Examples:</strong>
   </p>
 <pre class="brush: python">
-list(create_intervals({1, 2, 3, 4, 5, 7, 8, 12})) == [(1, 5), (7, 8), (12, 12)]
-list(create_intervals({1, 2, 3, 6, 7, 8, 4, 5})) == [(1, 8)]</pre>
+list(create_intervals(iter(sorted(list({1, 2, 3, 4, 5, 7, 8, 12}))))) == [(1, 5), (7, 8), (12, 12)]
+list(create_intervals(iter(sorted(list({1, 2, 3, 6, 7, 8, 4, 5}))))) == [(1, 8)]</pre>
 </div>
 
