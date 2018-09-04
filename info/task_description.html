@@ -29,8 +29,10 @@
     <strong>Examples:</strong>
   </p>
 <pre class="brush: python">
-list(create_intervals(iter(sorted(list({1, 2, 3, 4, 5, 7, 8, 12}))))) == [(1, 5), (7, 8), (12, 12)]
-list(create_intervals(iter(sorted(list({1, 2, 3, 6, 7, 8, 4, 5}))))) == [(1, 8)]</pre>
+list(create_intervals(iter(sorted(list({1, 2, 3, 4, 5, 7, 8, 12}))))) == [
+                                      (1, 5), (7, 8), (12, 12)]
+list(create_intervals(iter(sorted(list({1, 2, 3, 6, 7, 8, 4, 5}))))) == [
+                                      (1, 8)]</pre>
 </div>
 
 
